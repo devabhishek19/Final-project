@@ -1,0 +1,139 @@
+body{
+	font-family: "Dosis", Arial, sans-serif;
+
+  line-height: 27px;
+  
+  text-transform: uppercase;
+  color: #181818;
+}
+/*#backimgc-h{
+	background: url('../img/alone.jpeg') no-repeat;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+}*/
+.navbar{
+	background: white !important;
+	top: 0 !important;
+	margin: 0 !important;
+	padding: 10px;
+}
+.contactheader{
+	height: 160px;
+	background: rgba(0,0,0,.2);
+}
+.header-container{
+
+}
+.left{
+	margin-top: 60px;
+	/*background: rgba(0,0,0,.8);*/
+	text-transform: uppercase;
+	color: white;
+}
+.right{
+	margin-top: 60px;
+	/*background: rgba(0,0,0,.8);*/
+	text-transform: uppercase;
+	color: white;
+	text-align: right;
+}
+.right a{
+	color: white;
+}
+.right a:hover{
+	text-decoration: none;
+	color: orange;
+}
+form input{
+	border: none;
+	border-bottom: 1px solid black;
+}
+.comment{
+	margin-top: 20px;
+}
+.comment textarea{
+	border: none;
+	border-bottom: 1px solid black;
+}
+.row{
+	margin-left: 0;
+	margin-top: 20px;
+}
+.contact ul{
+	list-style-type: none;
+}
+.contact ul li address{
+	line-height: 20px;
+
+}
+/*portfolio css*/
+.portfolio3{
+	padding-bottom: 20px;
+}
+
+.portfolio1 img, .portfolio2 img, .portfolio3 img{
+	width: 90%;
+	height: 300px;
+	background-image: cover;
+}
+.enlarged{
+	width: 800px;
+	height: 500px;
+	margin: 0 auto;
+	padding: 0 auto;
+}
+.portfolio1 a, .portfolio2 a, .portfolio3 a{
+	border: none;
+}
+/*services css*/
+.subheader {
+	text-align: center;
+	margin-top: 150px;
+}
+.threeclm, .threeclm2{
+	text-align: center;
+}
+.threeclm{
+margin-top: 130px;
+margin-bottom: 100px;
+}
+.threeclm span, .threeclm2 span{
+	font-size: 3em;
+}
+.middle{
+	 transform: rotateY(180deg);
+}
+.portfolio-item-hover{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 10px;
+	right: 0;
+	width: 80%;
+	margin: 30px;
+  	background-color: rgba(24, 24, 24, 0.75);
+  	display: none;
+}
+.portfolio-item-hover a.zoom-action {
+  color: white;
+  font-size: 48px;
+  line-height: 48px;
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: opacity 0.3s 0.3s;
+  transition: opacity 0.3s 0.3s;
+}
+.parallax-window {
+	margin-top: 80px;
+    background: transparent;
+}
+/*index.html*/
+section.slideshow{
+	margin-top: 80px;
+}

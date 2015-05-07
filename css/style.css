@@ -1,0 +1,30 @@
+body{
+	margin-top: 90px;
+}
+.jumbotron{
+	text-align: center;
+}
+.jbox{
+	text-align: center;
+	
+	
+}
+.jbox p{
+	height: 100px;
+	overflow: scroll;
+}
+.prt2{
+	text-align: center;
+	background-color: #F0F0F0;
+}
+.one{
+	border-right: 1px solid grey;
+}
+.glyphicon{
+	font-size: 50px;
+}
+.footer{
+	text-align: center;
+}
+
+

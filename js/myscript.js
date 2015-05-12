@@ -91,6 +91,32 @@ $(document).ready(function(){
 
       });
   });
+
+$(document).ready(function(){
+  
+  $('ul.tabs li').click(function(){
+    var tab_id = $(this).attr('data-tab');
+
+    $('ul.tabs li').removeClass('current');
+    $('.tab-content').removeClass('current');
+
+    $(this).addClass('current');
+    $("#"+tab_id).addClass('current');
+  });
+
+});
+$(document).ready(function(){
+    setInterval(function(){
+        $('#testimonials .slide').filter(':visible').fadeOut(1000,function(){
+            if($(this).next('.slide').size()){
+                $(this).next().fadeIn(1000);
+            }
+            else{
+                $('#testimonials .slide').eq(0).fadeIn(1000);
+            }
+        });
+    },2500);    
+}); 
 // }
 
 // $(document).ready(function(){

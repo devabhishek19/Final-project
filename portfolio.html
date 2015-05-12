@@ -17,8 +17,15 @@
 	<script type="text/javascript" src="js/jquery-1.11.2.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="parallax/parallax.min.js"></script>
+	<script src="js/modernizr.js"></script> 
 </head>
 <body>
+<!-- for portfolio lightbox -->
+	<div id="lightBoxbg" ></div>
+	<div id="lightBox">
+		<img src="" id="enlarge">
+	<img src="img/close.png"width="20"id="close" class="close">
+	</div>
 <!-- for the header of portfolio -->
 <header> 
 		<nav class="navbar navbar-fixed-top ">
@@ -66,15 +73,12 @@
 		</div>
 <!-- end of header -->
 <!-- start portfolio -->
-<section class="wrapper">
-	<div class="container portfoliomain">
-		<div class="row portfolio1">
-			<div class="col-xs-12 col-sm-8">
+		<section class="wrapper">
+		<div class="container portfoliomain">
+			<div class="row portfolio1">
+				<div class="col-xs-12 col-sm-8">
 				<div class="portfolio-item-thimbnail">
-					<img src="img/business_cards.jpg"id="folio-img1">
-					<div class="portfolio-item-hover"id="portfolio-item-hover">
-						<a class="fancybox-portfolio-gallery zoom-action"href="img/business_cards.jpg" rel="group">+</a>
-					</div>
+					<img src="img/business_cards.jpg" id="folio-img1" class="lbox" >
 				</div>
 			</div>
 			<div class="col-xs-12 col-sm-4">
@@ -83,14 +87,13 @@
 				<h4>Photography</h4><br>
 
 				<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione.</p><br>
-				<a class="btn btn-default"href="#">Read More</a>
+				<a class="btn btn-default prt-btn"href="#">Read More</a>
 
 			</div>
 		</div>
-		<div class="parallax-window folio2" data-parallax="scroll" data-image-src="img/alone.jpeg">
 		<div class="row portfolio2">
-			<div class="col-xs-12 col-sm-8">
-				<img src="img/branding.jpg">
+			<div class="col-xs-12 col-sm-8">					
+				<img src="img/branding.jpg" class="lbox">
 			</div>
 			<div class="col-sm-4 col-xs-12">
 				<br>
@@ -98,20 +101,20 @@
 				
 				<h4>Photography</h4><br>
 				<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione.</p><br>
-				<a class="btn btn-default"href="#">Read More</a>
+				<a class="btn btn-default prt-btn"href="#">Read More</a>
 			</div>
 		</div>
-	</div>
+<!-- portfolio image 3 -->
 		<div class="row portfolio3">
 			<div class="col-xs-12 col-sm-8">
-				<img src="img/Graphic-Designing.jpg">
+				<img src="img/Graphic-Designing.jpg" class="lbox">
 			</div>
 			<div class="col-sm-4 col-xs-12">
 				<br>
 				<h3>Graphic Designing</h3>
 				<h4>Photography</h4><br>
 				<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione.</p><br>
-				<a class="btn btn-default"href="#">Read More</a>
+				<a class="btn btn-default prt-btn"href="#">Read More</a>
 			</div>
 		</div>
 	</div>
@@ -151,5 +154,6 @@
 			</div> 
 
 </footer>
+<a href="#"class="bktt"><img src="img/home.png" id="bkt"></a>
 </body>
 </html>		

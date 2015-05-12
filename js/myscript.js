@@ -3,7 +3,7 @@
 // $('.parallax-window').parallax({imageSrc: '/path/to/image.jpg'});
 
 function initialize() {
-	var myLatlng = new google.maps.LatLng(40.707952,-74.00666);
+  var myLatlng = new google.maps.LatLng(40.707952,-74.00666);
   var mapProp = {
     center: myLatlng,
     zoom:11,
@@ -91,13 +91,62 @@ $(document).ready(function(){
 
       });
   });
-// }
 
-// $(document).ready(function(){
-//   $("#boxes").mouseenter(function(){
-//      rotation(); 
-//   });
-// })
 
  // portfolio fancybox
+ $(document).ready(function(){
+
+  $('.lbox').on('click', function(){
+    $('body').css("overflow", "hidden");
+    var currentSource = $(this).attr("src");
+    $("#enlarge").attr("src", currentSource);
+    $("#lightBoxbg").css("display", "block");
+    $("#lightBox").css("display", "block");
+
+  });
+// for fiding the box again
+  $('.close').on('click', function(){
+    $('body').css("overflow", "scroll");
+    $("#lightBoxbg").css("display", "none");
+    $("#lightBox").css("display", "none");
+    
+  });
+
+ });
+
+ // border effect on hovering over the readmore on portfolio
+
+ $(document).ready(function(){
+    $('.prt-btn').on('mouseenter',function(){
+      $(this).css({"border": "1px solid black","backgroundColor": "black", "color": "white"});
+    });
+     $('.prt-btn').on('mouseleave',function(){
+      $(this).css({"border": "none", "backgroundColor": "white", "color": "black"});
+    });
+ });
+
+ // back to top
+ $(window).scroll(function(){
+  if($(window).scrollTop()>300){
+    $('.bktt').fadeIn(1000);
+  }
+  else{
+    $('.bktt').fadeOut(1000);
+  }
+ });
+
+ $(function(){
+  $('#bkt').on("click",function(){
+    $('html, body').animate({"scrollTop": 0},1000);
+    return false;
+ });
+ 
+ });
+
+
+
+ 
+
+  
+
  
